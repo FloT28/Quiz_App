@@ -10,7 +10,7 @@ ENV FLASK_APP=app.py
 ENV FLASK_RUN_HOST =0.0.0.0 
 
 # Installs 'gcc' and other dependencies
-RUN apk add -no-cache gcc musl-dev linux-headers 
+RUN apk add --no-cache gcc musl-dev linux-headers 
 
 # Copies requirements.txt
 COPY requirements.txt . 
