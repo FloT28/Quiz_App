@@ -21,5 +21,5 @@ jobs:
             cd ~/Quiz_Test || git clone https://github.com/${{ github.repository }}.git ~/Quiz_Test
             cd ~/Quiz_Test
             git pull origin main 
-            sugo docker compose down 
+            sudo docker compose down 
             sudo docker compose up -d --build 
