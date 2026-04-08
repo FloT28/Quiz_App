@@ -2,10 +2,8 @@ services:
   web: 
     build: .
     ports: 
-      - "${APP_PORT}:5000"
+      - "8000:8000"
     environment: 
-      - REDIS_HOST=${REDIS_HOST}
-      - REDIS_PORT=${REDIS_PORT}
-
+      - REDIS_HOST=redis
   redis: 
-    image: redis:alpine
+    image: "redis:alpine"
